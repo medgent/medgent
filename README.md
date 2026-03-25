@@ -1,9 +1,5 @@
 ## Hi there 👋
 
-Medical Disclaimer — Please Read Medgent is a wellness assistant only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before making changes to medications, diet, or exercise routines. Medgent never diagnoses conditions. All responses include a reminder to consult your doctor for medical decisions. In an emergency, call emergency services immediately (112 / 911 or your countries respective emergency numbers {  (https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers) }).
-
-By using Medgent, you acknowledge it is a personal wellness tool for informational purposes only.
-
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 # 🏥 Medgent — Your Personal AI Health Manager
