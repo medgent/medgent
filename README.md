@@ -178,7 +178,7 @@ cd medgent && python3 setup.py && bash scripts/start.sh
 
 ---
 
-## 📁 What's in the MedGENT -v1.o ZIP ?
+## 📁 What's in the MedGENT -v1.0 ZIP ?
 
 ```
 medgent-v2.0.zip/
@@ -194,6 +194,7 @@ medgent-v2.0.zip/
 ## 📁 What's in the MedGENT -v2.0 ZIP ?
 
 ```
+includes also >>>>
 medgent-v2.0.zip — Updated package now contains 8 complete bot files:
 
 telegram_bot.py · whatsapp_bot.py · discord_bot.py · signal_bot.py
