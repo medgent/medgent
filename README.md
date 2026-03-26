@@ -6,20 +6,18 @@
 ### Your AI health manager. In WhatsApp or Telegram. Free forever.
 
 [![Website](https://img.shields.io/badge/Website-medgent.in-e05c1a?style=for-the-badge)](https://www.medgent.in)
-[![Download](https://img.shields.io/badge/⬇_Download-medgent--v1.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v1.0.zip)
+[![Download](https://img.shields.io/badge/⬇_Download-medgent--v1.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Free%20Forever-1a8a5a?style=for-the-badge)](https://github.com/medgent/medgent)
 [![WhatsApp](https://img.shields.io/badge/Works%20in-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://www.medgent.in)
 [![Telegram](https://img.shields.io/badge/Works%20in-Telegram-229ED9?style=for-the-badge&logo=telegram)](https://www.medgent.in)
 
-**[🌐 Website](https://www.medgent.in) · [⬇️ Download ZIP](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v1.0.zip) · [📖 Full Guide](https://www.medgent.in)**
+**[🌐 Website](https://www.medgent.in) · [⬇️ Download ZIP](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip) · [📖 Full Guide](https://www.medgent.in)**
 
 </div>
 
 ---
 
-> ⚕️ **Medical Disclaimer:** — Please Read Medgent is a wellness assistant only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before making changes to medications, diet, or exercise routines. Medgent never diagnoses conditions. All responses include a reminder to consult your doctor for medical decisions. In an emergency, call emergency services immediately (112 / 911 or your countries respective emergency numbers { (https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers) }).
-
-By using Medgent, you acknowledge it is a personal wellness tool for informational purposes only.
+> ⚕️ **Medical Disclaimer:** Medgent is a wellness assistant only — NOT a substitute for professional medical advice. Never diagnoses. Always consult your doctor before changing medications, diet, or exercise. In emergencies call 112 / 911 or [your country's emergency number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
 
 ---
 
@@ -44,7 +42,7 @@ Medgent:   ✅ Logged! Adherence: 1/2 today · Next: 8:00 PM
 ## ⬇️ Download
 
 ### Easiest — One Click
-👉 **[Download medgent-v1.0.zip](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v1.0.zip)**
+👉 **[Download medgent-v2.0.zip](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)**
 
 Unzip it → open Terminal in that folder → go to Step 2 below.
 
@@ -180,7 +178,7 @@ cd medgent && python3 setup.py && bash scripts/start.sh
 ## 📁 What's in the ZIP
 
 ```
-medgent-v1.0.zip/
+medgent-v2.0.zip/
 ├── setup.py                  ← Run this first!
 ├── requirements.txt          ← Python dependencies
 ├── core/medgent.py           ← AI agent engine
@@ -203,13 +201,6 @@ Emergencies: **112 / 911** or [find your country's number](https://en.wikipedia.
 ---
 
 *Made with 💚 · [www.medgent.in](https://www.medgent.in)*
-
-
-<!--
-**medgent/medgent** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
