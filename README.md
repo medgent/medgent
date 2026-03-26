@@ -198,27 +198,17 @@ telegram_bot.py · whatsapp_bot.py · discord_bot.py · signal_bot.py
 slack_bot.py · messenger_bot.py · sms_bot.py · webhook_bot.py (covers WeChat, LINE, Viber, any platform)
 ```
 
-```
+
 
 ---
 
-## ⚕️ Medical Disclaimer
+## ⚕️ Medical Disclaimer — Please Read
+Medgent is a wellness assistant only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before making changes to medications, diet, or exercise routines. Medgent never diagnoses conditions. All responses include a reminder to consult your doctor for medical decisions.
 
-Medgent is a **wellness assistant only** — NOT a medical device, NOT medical advice, CANNOT diagnose or treat. **Always consult your doctor** before changing medications, diet, or exercise.
+ In an emergency, call emergency services immediately: **112 / 911** or [find your country's number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
 
-Disclaimer appears automatically at every chat session start and whenever health advice is given.
-
-Emergencies: **112 / 911** or [find your country's number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
+By using Medgent, you acknowledge it is a personal wellness tool for informational purposes only.
 
 ---
 
 *Made with 💚 · [www.medgent.in](https://www.medgent.in)*
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
