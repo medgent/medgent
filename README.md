@@ -191,6 +191,17 @@ medgent-v2.0.zip/
 └── scripts/start.sh          ← Start 24/7
 ```
 
+## 📁 What's in the MedGENT -v2.0 ZIP
+
+```
+medgent-v2.0.zip — Updated package now contains 8 complete bot files:
+
+telegram_bot.py · whatsapp_bot.py · discord_bot.py · signal_bot.py
+slack_bot.py · messenger_bot.py · sms_bot.py · webhook_bot.py (covers WeChat, LINE, Viber, any platform)
+```
+
+```
+
 ---
 
 ## ⚕️ Medical Disclaimer
