@@ -6,7 +6,7 @@
 ### Your AI health manager. In WhatsApp or Telegram. Free forever.
 
 [![Website](https://img.shields.io/badge/Website-medgent.in-e05c1a?style=for-the-badge)](https://www.medgent.in)
-[![Download](https://img.shields.io/badge/⬇_Download-medgent--v1.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)
+[![Download](https://img.shields.io/badge/⬇_Download-medgent--v2.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Free%20Forever-1a8a5a?style=for-the-badge)](https://github.com/medgent/medgent)
 [![WhatsApp](https://img.shields.io/badge/Works%20in-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://www.medgent.in)
 [![Telegram](https://img.shields.io/badge/Works%20in-Telegram-229ED9?style=for-the-badge&logo=telegram)](https://www.medgent.in)
