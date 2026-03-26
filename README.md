@@ -17,7 +17,10 @@
 
 ---
 
-> ⚕️ **Medical Disclaimer:** Medgent is a wellness assistant only — NOT a substitute for professional medical advice. Never diagnoses. Always consult your doctor before changing medications, diet, or exercise. In emergencies call 112 / 911 or [your country's emergency number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
+> ⚕️ **Medical Disclaimer — Please Read :** Medgent is a wellness assistant only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before making changes to medications, diet, or exercise routines. Medgent never diagnoses conditions. All responses include a reminder to consult your doctor for medical decisions. In emergencies call 112 / 911 or [your country's emergency number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
+>
+> By using Medgent, you acknowledge it is a personal wellness tool for informational purposes only.
+
 
 ---
 
