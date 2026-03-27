@@ -5,15 +5,23 @@ set -e
 echo "🏥 MEDGENT INSTALLER"
 echo "🚀 Smart auto-install starting..."
 
-# ===== AUTO CONFIG =====
+# ===== CONFIG =====
 INSTALL_DIR="$HOME/medgent"
 VERSION=${1:-"latest"}
 
 # ===== OS DETECTION =====
 OS="$(uname)"
-echo "🧠 OS: $OS"
+echo "🧠 Detected OS: $OS"
 
-# ===== VERSION AUTO LOGIC =====
+# ===== WINDOWS CHECK =====
+IS_WINDOWS=false
+if [[ "$OS" == *"MINGW"* ]] || [[ "$OS" == *"NT"* ]]; then
+  IS_WINDOWS=true
+  echo "🪟 Windows detected (Git Bash)"
+  echo "⚠️ Recommended: Use WSL for full compatibility"
+fi
+
+# ===== VERSION LOGIC =====
 get_latest_version() {
   echo "v2.0"
 }
@@ -24,16 +32,23 @@ fi
 
 ZIP_URL="https://github.com/medgent/medgent/raw/main/medgent-${VERSION}.zip"
 
-echo "📦 Version: $VERSION"
+echo "📦 Installing version: $VERSION"
 
-# ===== DEPENDENCY AUTO INSTALL =====
+# ===== DEPENDENCY INSTALL =====
 install_if_missing () {
   if ! command -v $1 &> /dev/null; then
     echo "⚙️ Installing $1..."
+
     if [[ "$OS" == "Linux" ]]; then
       sudo apt update && sudo apt install -y $1
+
     elif [[ "$OS" == "Darwin" ]]; then
-      brew install $1
+      if command -v brew &> /dev/null; then
+        brew install $1
+      else
+        echo "⚠️ Homebrew not found. Install from https://brew.sh"
+      fi
+
     else
       echo "⚠️ Please install $1 manually"
     fi
@@ -43,11 +58,16 @@ install_if_missing () {
 install_if_missing curl
 install_if_missing unzip
 
-# ===== INSTALL PROCESS =====
+# ===== PYTHON CHECK =====
+if ! command -v python3 &> /dev/null; then
+  echo "⚠️ Python3 not found. Please install Python to enable full features."
+fi
+
+# ===== INSTALL =====
 mkdir -p "$INSTALL_DIR"
 cd "$INSTALL_DIR"
 
-echo "⬇️ Downloading..."
+echo "⬇️ Downloading Medgent..."
 curl -L -o medgent.zip "$ZIP_URL"
 
 echo "📂 Extracting..."
@@ -60,16 +80,28 @@ if [ -f "medgent_full/setup.py" ]; then
   python3 medgent_full/setup.py || true
 fi
 
-# ===== AUTO CLI COMMAND =====
-echo 'alias medgent="cd ~/medgent"' >> ~/.bashrc 2>/dev/null || true
+# ===== CLI SHORTCUT (Linux/Mac only) =====
+if [ "$IS_WINDOWS" = false ]; then
+  if ! grep -q 'alias medgent=' ~/.bashrc 2>/dev/null; then
+    echo 'alias medgent="cd ~/medgent"' >> ~/.bashrc
+    echo "⚡ CLI command added: medgent"
+  fi
+fi
 
-# ===== COOL EFFECT =====
+# ===== FINISH =====
 echo "✨ Finalizing..."
 sleep 1
 echo "⚡ Almost ready..."
 sleep 1
 
-# ===== DONE =====
-echo "✅ Medgent installed!"
-echo "👉 Type: medgent"
+echo ""
+echo "✅ Medgent installed successfully!"
+echo "📁 Location: $INSTALL_DIR"
+echo ""
+
+if [ "$IS_WINDOWS" = true ]; then
+  echo "👉 Open folder manually: $INSTALL_DIR"
+else
+  echo "👉 Run: medgent"
+fi
 
