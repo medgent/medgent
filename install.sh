@@ -18,7 +18,6 @@ IS_WINDOWS=false
 if [[ "$OS" == *"MINGW"* ]] || [[ "$OS" == *"NT"* ]]; then
   IS_WINDOWS=true
   echo "🪟 Windows detected (Git Bash)"
-  echo "⚠️ Recommended: Use WSL for full compatibility"
 fi
 
 # ===== VERSION LOGIC =====
@@ -46,7 +45,7 @@ install_if_missing () {
       if command -v brew &> /dev/null; then
         brew install $1
       else
-        echo "⚠️ Homebrew not found. Install from https://brew.sh"
+        echo "⚠️ Install Homebrew: https://brew.sh"
       fi
 
     else
@@ -69,15 +68,20 @@ if ! command -v python3 &> /dev/null; then
     if command -v brew &> /dev/null; then
       brew install python
     else
-      echo "⚠️ Install Homebrew first: https://brew.sh"
+      echo "⚠️ Install Homebrew first"
     fi
 
-  else
-    echo ""
-    echo "❌ Python auto-install not supported on Windows"
-    echo "👉 Install manually: https://www.python.org/downloads/"
-    echo "👉 Then re-run installer"
-    echo ""
+  elif [ "$IS_WINDOWS" = true ]; then
+    echo "🪟 Installing Python via winget..."
+
+    # Try installing Python silently
+    powershell.exe -Command "winget install -e --id Python.Python.3 --silent" || {
+      echo "❌ Winget failed."
+      echo "👉 Install manually: https://www.python.org/downloads/"
+    }
+
+    echo "🔄 Refreshing environment..."
+    sleep 5
   fi
 fi
 
@@ -96,6 +100,8 @@ rm medgent.zip
 if command -v python3 &> /dev/null && [ -f "medgent_full/setup.py" ]; then
   echo "⚙️ Running setup..."
   python3 medgent_full/setup.py || true
+else
+  echo "⚠️ Skipping setup (Python not ready)"
 fi
 
 # ===== CLI SHORTCUT =====
@@ -118,8 +124,9 @@ echo "📁 Location: $INSTALL_DIR"
 echo ""
 
 if [ "$IS_WINDOWS" = true ]; then
-  echo "👉 Open folder manually: $INSTALL_DIR"
-  echo "👉 If Python missing, install it and re-run setup"
+  echo "👉 If Python was just installed, RESTART terminal"
+  echo "👉 Then run:"
+  echo "   python medgent_full/setup.py"
 else
   echo "👉 Run: medgent"
 fi
