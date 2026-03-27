@@ -235,7 +235,7 @@ webhook_bot.py Webhook
 
 **✈️
 ⭐ Easiest — Start here
-Telegram — 2 minutes, completely free ##
+Telegram — 2 minutes, completely free **
 
 
 1. Open Telegram → search @BotFather → tap it
