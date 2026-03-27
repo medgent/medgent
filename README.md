@@ -227,8 +227,8 @@ sms_bot.pyVia Twilio
 🔗
 WeChat/LINE
 webhook_bot.pyWebhook
-
 ---
+
 ##⚠️
 **Important: The bots (Python scripts) need a separate VPS to run 24/7 — not Hostinger web hosting. Hostinger web hosting serves HTML websites only. Use Oracle Cloud Free (free forever) or any VPS for the Python bots.**
 ---
