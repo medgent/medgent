@@ -232,12 +232,13 @@ webhook_bot.pyWebhook
 ##⚠️
 **Important: The bots (Python scripts) need a separate VPS to run 24/7 — not Hostinger web hosting. Hostinger web hosting serves HTML websites only. Use Oracle Cloud Free (free forever) or any VPS for the Python bots.**
 ---
+---
 
-✈️
+#✈️
 ⭐ Easiest — Start here
 Telegram — 2 minutes, completely free
 
----
+
 
 1. Open Telegram → search @BotFather → tap it
 2. Send /newbot → choose a name → choose a username ending in "bot"
