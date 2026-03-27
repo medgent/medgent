@@ -58,9 +58,27 @@ install_if_missing () {
 install_if_missing curl
 install_if_missing unzip
 
-# ===== PYTHON CHECK =====
+# ===== PYTHON AUTO INSTALL =====
 if ! command -v python3 &> /dev/null; then
-  echo "⚠️ Python3 not found. Please install Python to enable full features."
+  echo "🐍 Python3 not found. Installing..."
+
+  if [[ "$OS" == "Linux" ]]; then
+    sudo apt update && sudo apt install -y python3 python3-pip
+
+  elif [[ "$OS" == "Darwin" ]]; then
+    if command -v brew &> /dev/null; then
+      brew install python
+    else
+      echo "⚠️ Install Homebrew first: https://brew.sh"
+    fi
+
+  else
+    echo ""
+    echo "❌ Python auto-install not supported on Windows"
+    echo "👉 Install manually: https://www.python.org/downloads/"
+    echo "👉 Then re-run installer"
+    echo ""
+  fi
 fi
 
 # ===== INSTALL =====
@@ -75,12 +93,12 @@ unzip -o medgent.zip
 rm medgent.zip
 
 # ===== AUTO SETUP =====
-if [ -f "medgent_full/setup.py" ]; then
+if command -v python3 &> /dev/null && [ -f "medgent_full/setup.py" ]; then
   echo "⚙️ Running setup..."
   python3 medgent_full/setup.py || true
 fi
 
-# ===== CLI SHORTCUT (Linux/Mac only) =====
+# ===== CLI SHORTCUT =====
 if [ "$IS_WINDOWS" = false ]; then
   if ! grep -q 'alias medgent=' ~/.bashrc 2>/dev/null; then
     echo 'alias medgent="cd ~/medgent"' >> ~/.bashrc
@@ -101,7 +119,7 @@ echo ""
 
 if [ "$IS_WINDOWS" = true ]; then
   echo "👉 Open folder manually: $INSTALL_DIR"
+  echo "👉 If Python missing, install it and re-run setup"
 else
   echo "👉 Run: medgent"
 fi
-
