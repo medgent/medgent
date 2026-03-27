@@ -6,7 +6,7 @@
 ### Your AI health manager. In WhatsApp or Telegram. Free forever.
 
 [![Website](https://img.shields.io/badge/Website-medgent.in-e05c1a?style=for-the-badge)](https://www.medgent.in)
-[![Download](https://img.shields.io/badge/⬇_Download-medgent--v2.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)
+[![Download](https://img.shields.io/badge/⬇_Download-medgent--v1.0.zip-22c474?style=for-the-badge)](https://github.com/medgent/medgent/raw/refs/heads/main/medgent-v2.0.zip)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Free%20Forever-1a8a5a?style=for-the-badge)](https://github.com/medgent/medgent)
 [![WhatsApp](https://img.shields.io/badge/Works%20in-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://www.medgent.in)
 [![Telegram](https://img.shields.io/badge/Works%20in-Telegram-229ED9?style=for-the-badge&logo=telegram)](https://www.medgent.in)
@@ -178,7 +178,7 @@ cd medgent && python3 setup.py && bash scripts/start.sh
 
 ---
 
-## 📁 What's in the MedGENT -v2.0 ZIP ?
+## 📁 What's in the ZIP
 
 ```
 medgent-v2.0.zip/
@@ -190,24 +190,16 @@ medgent-v2.0.zip/
 ├── scripts/install.sh        ← Auto-installer
 └── scripts/start.sh          ← Start 24/7
 ```
-```
-includes also >>>>
-medgent-v2.0.zip — Updated package now contains 8 complete bot files:
-
-telegram_bot.py · whatsapp_bot.py · discord_bot.py · signal_bot.py
-slack_bot.py · messenger_bot.py · sms_bot.py · webhook_bot.py (covers WeChat, LINE, Viber, any platform)
-```
-
-
 
 ---
 
-## ⚕️ Medical Disclaimer — Please Read
-Medgent is a wellness assistant only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before making changes to medications, diet, or exercise routines. Medgent never diagnoses conditions. All responses include a reminder to consult your doctor for medical decisions.
+## ⚕️ Medical Disclaimer
 
- In an emergency, call emergency services immediately: **112 / 911** or [find your country's number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
+Medgent is a **wellness assistant only** — NOT a medical device, NOT medical advice, CANNOT diagnose or treat. **Always consult your doctor** before changing medications, diet, or exercise.
 
-By using Medgent, you acknowledge it is a personal wellness tool for informational purposes only.
+Disclaimer appears automatically at every chat session start and whenever health advice is given.
+
+Emergencies: **112 / 911** or [find your country's number](https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers).
 
 ---
 
