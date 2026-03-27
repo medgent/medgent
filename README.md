@@ -193,6 +193,44 @@ medgent-v2.0.zip/
 
 ---
 
+Connect All 8 Chat Channels
+Medgent v2.0 ZIP includes a bot file for every platform. Start with Telegram (easiest).
+
+✈️
+Telegram
+telegram_bot.py⭐ Start here
+💬
+WhatsApp
+whatsapp_bot.pyVia Twilio
+💜
+Discord
+discord_bot.pyEasy
+🔵
+Signal
+signal_bot.pyDocker
+🟦
+Slack
+slack_bot.pySlack API
+💙
+Messenger
+messenger_bot.pyMeta API
+📱
+SMS
+sms_bot.pyVia Twilio
+🔗
+WeChat/LINE
+webhook_bot.pyWebhook
+⚠️
+Important: The bots (Python scripts) need a separate VPS to run 24/7 — not Hostinger web hosting. Hostinger web hosting serves HTML websites only. Use Oracle Cloud Free (free forever) or any VPS for the Python bots.
+✈️
+⭐ Easiest — Start here
+Telegram — 2 minutes, completely free
+Open Telegram → search @BotFather → tap it
+Send /newbot → choose a name → choose a username ending in "bot"
+BotFather sends a token → copy it
+In config/settings.json: set "telegram_token": "YOUR_TOKEN"
+On your VPS: python channels/telegram_bot.py → send /start to your bot ✅
+
 ## ⚕️ Medical Disclaimer
 
 Medgent is a **wellness assistant only** — NOT a medical device, NOT medical advice, CANNOT diagnose or treat. **Always consult your doctor** before changing medications, diet, or exercise.
