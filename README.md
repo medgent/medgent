@@ -206,19 +206,19 @@ whatsapp_bot.pyVia Twilio
 ---
 💜
 Discord
-discord_bot.pyEasy
+discord_bot.py Easy
 ---
 🔵
 Signal
-signal_bot.pyDocker
+signal_bot.py Docker
 ---
 🟦
 Slack
-slack_bot.pySlack API
+slack_bot.py Slack API
 ---
 💙
 Messenger
-messenger_bot.pyMeta API
+messenger_bot.py Meta API
 ---
 📱
 SMS
@@ -226,7 +226,7 @@ sms_bot.pyVia Twilio
 ---
 🔗
 WeChat/LINE
-webhook_bot.pyWebhook
+webhook_bot.py Webhook
 ---
 
 ##⚠️
@@ -238,14 +238,13 @@ webhook_bot.pyWebhook
 Telegram — 2 minutes, completely free
 
 
-
 1. Open Telegram → search @BotFather → tap it
 2. Send /newbot → choose a name → choose a username ending in "bot"
 3. BotFather sends a token → copy it
 4. In config/settings.json: set "telegram_token": "YOUR_TOKEN"
 5. On your VPS: python channels/telegram_bot.py → send /start to your bot ✅
 ---
----
+
 ## ⚕️ Medical Disclaimer
 
 Medgent is a **wellness assistant only** — NOT a medical device, NOT medical advice, CANNOT diagnose or treat. **Always consult your doctor** before changing medications, diet, or exercise.
