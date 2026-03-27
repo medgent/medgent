@@ -199,6 +199,17 @@ Medgent v2.0 ZIP includes a bot file for every platform. Start with Telegram (ea
 ** ✈️
 Telegram
 telegram_bot.py⭐ Start here **
+
+##✈️
+⭐ Easiest — Start here
+Telegram — 2 minutes, completely free ##
+
+
+1. Open Telegram → search @BotFather → tap it
+2. Send /newbot → choose a name → choose a username ending in "bot"
+3. BotFather sends a token → copy it
+4. In config/settings.json: set "telegram_token": "YOUR_TOKEN"
+5. On your VPS: python channels/telegram_bot.py → send /start to your bot ✅
 ---
 💬
 WhatsApp
@@ -234,16 +245,7 @@ webhook_bot.py Webhook
 ---
 
 
-##✈️
-⭐ Easiest — Start here
-Telegram — 2 minutes, completely free ##
 
-
-1. Open Telegram → search @BotFather → tap it
-2. Send /newbot → choose a name → choose a username ending in "bot"
-3. BotFather sends a token → copy it
-4. In config/settings.json: set "telegram_token": "YOUR_TOKEN"
-5. On your VPS: python channels/telegram_bot.py → send /start to your bot ✅
 ---
 
 ## ⚕️ Medical Disclaimer
