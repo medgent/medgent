@@ -232,7 +232,6 @@ webhook_bot.pyWebhook
 ##⚠️
 **Important: The bots (Python scripts) need a separate VPS to run 24/7 — not Hostinger web hosting. Hostinger web hosting serves HTML websites only. Use Oracle Cloud Free (free forever) or any VPS for the Python bots.**
 ---
----
 
 #✈️
 ⭐ Easiest — Start here
@@ -245,7 +244,8 @@ Telegram — 2 minutes, completely free
 3. BotFather sends a token → copy it
 4. In config/settings.json: set "telegram_token": "YOUR_TOKEN"
 5. On your VPS: python channels/telegram_bot.py → send /start to your bot ✅
-
+---
+---
 ## ⚕️ Medical Disclaimer
 
 Medgent is a **wellness assistant only** — NOT a medical device, NOT medical advice, CANNOT diagnose or treat. **Always consult your doctor** before changing medications, diet, or exercise.
