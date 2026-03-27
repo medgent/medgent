@@ -193,7 +193,7 @@ medgent-v2.0.zip/
 
 ---
 
-## New Updated Zip Connect All 8 Chat Channels
+## 📁 New Updated Zip Connect All 8 Chat Channels
 Medgent v2.0 ZIP includes a bot file for every platform. Start with Telegram (easiest).
 
 ** ✈️
